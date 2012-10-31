@@ -1,14 +1,32 @@
 <?php require_once 'header.php';?>
+<body>
+<div id="fb-root"></div>
+<script>
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '458907600814256', // App ID
+      channelUrl : 'https://github.com/milostomic/app/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional init code here
+
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
 	<div class="sredina">	
-<!--		<div class="levo ">
-			<ul class="css_vertical_menu">
-				<li><a href="#nogo">link 1</a></li>
-				<li><a href="#nogo">link 2</a></li>
-				<li><a href="#nogo">link 3</a></li>
-				<li><a href="#nogo">link 4</a></li>
-			</ul> 
-		</div>
--->
+
 		<div class="centar">
 	
 			<div class="naziv">
